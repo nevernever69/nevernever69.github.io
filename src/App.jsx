@@ -4,14 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-   <h1 className="flex justify-center text-3xl">
-	  building
-    </h1>
-    </>
+  <>
+  <div className=" bg-gray-950 flex justify-center items-center h-screen">
+  </div>
+  </>
   )
 }
 
