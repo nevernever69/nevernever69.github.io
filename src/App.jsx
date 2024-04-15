@@ -6,12 +6,14 @@ import Blog from './components/routes/Blog.jsx'
 import Top from './layout/Top.jsx'
 import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
 import Bottom from './layout/Bottom.jsx'
+import Project from './components/routes/Project.jsx'
+import Error from './components/routes/Error.jsx'
 
 
 function App() {
 return (
 	<>
-	<div className="lg:px-96 lg:my-10 mx-10 my-10 ">
+	<div className="lg:px-[527px] lg:my-10 mx-10 my-10 ">
 	<Top/>
 	<Outlet/>
 	</div>
@@ -35,6 +37,10 @@ const appRouter = createBrowserRouter([
 			{
 				path: '/about',
 				element: <Page/>
+			},
+			{
+				path: '/projects',
+				element: <Project/>
 			}
 		],
 		errorElement: <Error />
