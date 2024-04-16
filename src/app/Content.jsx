@@ -1,5 +1,5 @@
-import Icon from '@mdi/react';
-import { mdiGithub,  mdiLinkedin, mdiTwitter } from '@mdi/js';
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 const Content = () => {
 	return (
 		<>
@@ -30,9 +30,9 @@ const Content = () => {
 		#Connect
 		</h2>
 		<div className=" flex ">
-		<a className="px-2" href="https://github.com/nevernever69"><Icon path={mdiGithub} size={1} /></a>
-		<a className="px-2" href="https://linkedin.com/in/ashish-baghel-16a073230"><Icon path={mdiLinkedin} size={1} /></a>
-		<a className="px-2" href="https://twitter.com/Neverne55768089"><Icon path={mdiTwitter} size={1} /></a>
+		<a className="px-2" href="https://github.com/nevernever69"><FaGithub/></a>
+		<a className="px-2" href="https://linkedin.com/in/ashish-baghel-16a073230"><FaLinkedinIn /></a>
+		<a className="px-2" href="https://twitter.com/Neverne55768089"><FaXTwitter/></a>
 		</div>
 		</div>
 		</>
