@@ -13,11 +13,11 @@ import Error from './components/routes/Error.jsx'
 function App() {
 return (
 	<>
-	<div className="lg:px-[527px] lg:my-10 mx-10 my-10 ">
+	<div className="lg:px-[527px] m-10 ">
 	<Top/>
 	<Outlet/>
-	</div>
 	<Bottom/>
+	</div>
 	</>
   )
 }

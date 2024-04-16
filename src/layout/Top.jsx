@@ -4,10 +4,10 @@ import Sidebar from '../app/Sidebar.jsx'
 const Top = () => {
 	return(
 		<>
-		<div className="hidden lg:block">
+		<div className="hidden sm:block hidden">
 		<Navbar/>
 		</div>
-		<div className="lg:hidden block">
+		<div className="sm:hidden ">
 		<Mobilebar/>
 		</div>
 		<Sidebar/>
