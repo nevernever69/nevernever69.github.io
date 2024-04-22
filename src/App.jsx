@@ -43,8 +43,14 @@ const appRouter = createBrowserRouter([
 				element: <Project/>
 			}
 		],
-		errorElement: <Error />
-
+		errorElement: (
+			<>
+			<div className="lg:px-[527px] m-10 ">
+			<Top />
+			<Error />
+			</div>
+			</>
+		)
 
 	}
 
