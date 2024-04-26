@@ -1,7 +1,8 @@
+import React from 'react';
 import {Link} from 'react-router-dom';
-import {ModeToggle} from '../components//mode-toggle.jsx'
+import {ModeToggle} from '../components/mode-toggle'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 	return (
 		<>
 		<div className="flex justify-between">

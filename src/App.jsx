@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Page from './page.jsx'
-import Blog from './components/routes/Blog.jsx'
-import Top from './layout/Top.jsx'
+import Page from './page'
+import Blog from './components/routes/Blog'
+import Top from './layout/Top'
 import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
-import Bottom from './layout/Bottom.jsx'
-import Project from './components/routes/Project.jsx'
-import Error from './components/routes/Error.jsx'
+import Bottom from './layout/Bottom'
+import Project from './components/routes/Project'
+import Error from './components/routes/Error'
 
 
 function App() {

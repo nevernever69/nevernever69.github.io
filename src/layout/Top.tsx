@@ -1,7 +1,8 @@
-import Mobilebar from '../app/MobileBar.jsx'
-import Navbar from '../app/Navbar.jsx'
-import Sidebar from '../app/Sidebar.jsx'
-const Top = () => {
+import React from 'react'
+import Mobilebar from '../app/MobileBar'
+import Navbar from '../app/Navbar'
+import Sidebar from '../app/Sidebar'
+const Top: React.FC = () => {
 	return(
 		<>
 		<div className="hidden sm:block hidden">
