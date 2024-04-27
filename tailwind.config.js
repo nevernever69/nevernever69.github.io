@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -17,6 +18,9 @@ module.exports = {
       },
     },
     extend: {
+    fontFamily: {
+	    'indie' : ['Indie Flower', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -73,5 +77,16 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+ plugins: [
+    plugin(function ({ addBase }) {
+      addBase({
+        '@font-face': {
+          'font-family': "'Indie Flower'",
+          'font-weight': 300,
+          src: 'url(./utils/fonts/IndieFlower-Regular.ttf)',
+        }
+      })
+    }),
+    require("tailwindcss-animate")
+  ],
+};

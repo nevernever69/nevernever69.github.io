@@ -5,7 +5,7 @@ import { ModeToggle } from '../components/mode-toggle';
 const Navbar: React.FC = () => {
     return (
         <div className="flex justify-between items-center md:items-stretch md:flex-row">
-            <h4 className="font-bold font-indie text-3xl hover:text-gray-500">
+            <h4 className="font-bold font-indie text-4xl hover:text-gray-500 underline underline-offset-4">
                 <Link to='./'>Never</Link>
             </h4>
             <div className="flex text-2xl md:mt-0 md:ml-4">
