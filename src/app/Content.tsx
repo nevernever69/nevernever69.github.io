@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Content = () => {
 	return (
 		<>
-		<div className=" flex flex-col justify-center text-lg py-4">
+		<div className="py-4">
 		<p>
 		I Use <span className="font-bold">Arch</span> Btw 🐧.
 		</p>

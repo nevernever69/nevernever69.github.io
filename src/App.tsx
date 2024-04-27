@@ -10,10 +10,10 @@ import Project from './components/routes/Project'
 import Error from './components/routes/Error'
 
 
-function App() {
+function App(): React.FC {
 return (
 	<>
-	<div className="lg:px-[527px] m-10 ">
+	<div className="lg:px-[527px] m-10">
 	<Top/>
 	<Outlet/>
 	<Bottom/>

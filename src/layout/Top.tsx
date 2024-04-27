@@ -2,10 +2,10 @@ import React from 'react'
 import Mobilebar from '../app/MobileBar'
 import Navbar from '../app/Navbar'
 import Sidebar from '../app/Sidebar'
-const Top = () => {
+const Top: React.FC = () => {
 	return(
 		<>
-		<div className="hidden sm:block hidden">
+		<div className="hidden sm:block ">
 		<Navbar/>
 		</div>
 		<div className="sm:hidden ">

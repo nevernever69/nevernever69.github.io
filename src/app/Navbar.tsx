@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ModeToggle } from '../components/mode-toggle';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
     return (
         <div className="flex justify-between items-center md:items-stretch md:flex-row">
             <h4 className="font-bold font-indie text-3xl hover:text-gray-500">

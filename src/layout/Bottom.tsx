@@ -1,5 +1,5 @@
-import Bottombar from '../app/Bottombar.jsx'
-import Footer from '../app/Footer.jsx'
+import Bottombar from '../app/Bottombar'
+import Footer from '../app/Footer'
 const Bottom = () => {
 	return (
 		<>
