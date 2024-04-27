@@ -1,15 +1,16 @@
 import { Icon } from '@iconify/react';
 import {Link} from 'react-router-dom'
 import { Separator } from "@/components/ui/separator"
+import { Button } from "@/components/ui/button"
 import {
-  Sheet,
-  SheetContent,
+	Sheet,
+	SheetContent,
 	SheetOverlay,
-  SheetDescription,
-SheetHeader,
+	SheetDescription,
+	SheetHeader,
 	SheetClose,
-SheetTitle,
-SheetTrigger,
+	SheetTitle,
+	SheetTrigger,
 } from "@/components/ui/sheet"
 const CSheet = () => {
 	return(
@@ -25,8 +26,8 @@ const CSheet = () => {
 		<SheetDescription>
 		<div className="py-8">
 		<ul className="font-bold text-lg flex flex-col ">
-		<Link to='/' ><SheetClose><li className=" hover:border-gray-700 py-4 underline hover:underline-offset-1 hover:text-red-700">About</li></SheetClose></Link>
-		<Link to='/blog'><SheetClose><li className=" hover:text-red-700 hover:border-gray-700 underline hover:underline-offset-1 ">Blog</li></SheetClose></Link>
+		<li><Link to='/' ><SheetClose><Button variant="link">About</Button></SheetClose></Link></li>
+		<li><Link to='/blog'><SheetClose><Button variant="link">Blog</Button></SheetClose></Link></li>
 		</ul>
 		</div>
 		</SheetDescription>
