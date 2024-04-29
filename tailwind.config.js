@@ -80,11 +80,6 @@ module.exports = {
  plugins: [
     plugin(function ({ addBase }) {
       addBase({
-        '@font-face': {
-          'font-family': "'Indie Flower'",
-          'font-weight': 300,
-          src: 'url(./utils/fonts/IndieFlower-Regular.ttf)',
-        }
       })
     }),
     require("tailwindcss-animate")
