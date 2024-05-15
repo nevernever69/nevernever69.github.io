@@ -1,11 +1,10 @@
 import {Button} from './components/ui/button'
 import {ModeToggle} from '@/components/mode-toggle'
 import Content from './app/Content'
-import CSheet from './app/Sheet'
-import {useState } from 'react';
+import useDetails from './api/useDetails';
 
 function Page() {
-	const [page, setPage] = useState('here');
+	useDetails()
   return (
 	  <>
 	  <Content/>
