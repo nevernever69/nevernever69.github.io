@@ -25,20 +25,20 @@ const useDetails = () => {
         
 
         // Fetch details based on IP address
-        const detailsResponse = await fetch('http://ip-api.com/json/'+ ip, {
-          method: 'GET',
-          headers: {
-            'content-type': 'application/json;charset=UTF-8',
-          },
-        });
+        // const detailsResponse = await fetch('//ip-api.com/json/'+ ip, {
+        //   method: 'GET',
+        //   headers: {
+        //     'content-type': 'application/json;charset=UTF-8',
+        //   },
+        // });
 
-        const detailsData = await detailsResponse.json();
+        // const detailsData = await detailsResponse.json();
         const response = await fetch("https://api.nevernever.me/details", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(detailsData)
+          body: JSON.stringify({ip})
         });
              // setData(detailsData);
 
